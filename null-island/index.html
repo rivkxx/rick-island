@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111514">
+  <meta name="description" content="A small, strange corner of the internet.">
+  <title>NULL ISLAND — entrance</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/terminal.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="NULL ISLAND home">NULL<span>_</span>ISLAND</a>
+      <div class="system-status"><span class="status-dot"></span> SYSTEM ONLINE <span class="muted">/ v0.1.0</span></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">MENU <span>+</span></button>
+    </header>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">00 / entrance</a>
+      <a href="about.html">01 / about</a>
+      <a href="archive.html">02 / archive</a>
+      <a href="workshop.html">03 / workshop</a>
+      <a href="frequencies.html">04 / frequencies</a>
+      <a href="field-notes.html">05 / field notes</a>
+      <a href="elsewhere.html">06 / elsewhere</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">NODE 001 — PUBLIC ACCESS</p>
+        <h1>hello,<br><span class="accent">stranger.</span></h1>
+        <p class="lede">You found a place on the internet.</p>
+        <p class="quiet-copy">There is no particular reason for this to exist. You can look around anyway.</p>
+      </section>
+
+      <section class="terminal-window panel" aria-labelledby="terminal-heading">
+        <div class="window-bar">
+          <div class="window-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h2 id="terminal-heading">visitor@null-island: ~</h2>
+          <span class="window-label">TERMINAL 01</span>
+        </div>
+        <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">
+          <p class="terminal-line">NULL ISLAND INTERFACE [version 0.1.0]</p>
+          <p class="terminal-line muted">A small, strange corner of the internet.</p>
+          <p class="terminal-line">Type <code>help</code> to see available commands.</p>
+        </div>
+        <form class="terminal-form" id="terminal-form" autocomplete="off">
+          <label class="prompt" for="terminal-input">visitor@null-island:~$</label>
+          <input id="terminal-input" name="command" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command" placeholder="try help" autofocus>
+          <button type="submit" class="terminal-submit">RUN ↵</button>
+        </form>
+        <div class="terminal-foot"><span>LOCAL SESSION</span><span>↑ / ↓ COMMAND HISTORY</span></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">KNOWN LOCATIONS</p>
+          <span class="micro-label">06 INDEXED</span>
+        </div>
+        <div class="location-grid">
+          <a class="location-card" href="archive.html"><span class="card-index">/02</span><span class="card-title">The archive</span><span class="card-desc">Writing, research, things worth keeping.</span><span class="card-arrow">↗</span></a>
+          <a class="location-card" href="workshop.html"><span class="card-index">/03</span><span class="card-title">The workshop</span><span class="card-desc">Experiments, prototypes, unfinished things.</span><span class="card-arrow">↗</span></a>
+          <a class="location-card" href="frequencies.html"><span class="card-index">/04</span><span class="card-title">Frequencies</span><span class="card-desc">Music, listening notes, sound experiments.</span><span class="card-arrow">↗</span></a>
+          <a class="location-card" href="field-notes.html"><span class="card-index">/05</span><span class="card-title">Field notes</span><span class="card-desc">Loose thoughts from the outside world.</span><span class="card-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="notice panel">
+        <span class="notice-mark">i</span>
+        <div><p class="eyebrow">A NOTE FROM THE OPERATOR</p><p>This place is a work in progress. Some rooms are unfinished; a few are deliberately hard to find. Nothing here requires solving a puzzle to access the ordinary pages.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>NULL ISLAND © <span data-year></span></span>
+      <span>BUILT BY A PERSON, NOT A BRAND.</span>
+      <a href="lost.html">LOST? →</a>
+    </footer>
+  </div>
+</body>
+</html>
